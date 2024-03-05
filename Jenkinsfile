@@ -20,8 +20,10 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh './output'
+                    sh './non_existent_command'
                     echo 'Test Stage Successful'
+                    //sh './output'
+                    //echo 'Test Stage Successful'
                 }
             }
             post {
